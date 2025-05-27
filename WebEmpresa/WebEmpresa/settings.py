@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',     
     'blog',
     'ckeditor',
+    'contact',
     'core',
     'social',
     'services',
@@ -136,7 +137,10 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
-
-
+# Looking to send emails in production? Check out our Email API/SMTP product!
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '797876ee147e67'
+EMAIL_HOST_PASSWORD = 'eb11e2c03ee65d'
+EMAIL_PORT = '2525'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
